@@ -4,6 +4,28 @@
   background-color: #222D32;
 }
 
+/* -- 公共类 -- */
+html,body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.red {
+  color: #A94442;
+}
 
 /* -- login.html 开始 -- */
 
@@ -20,5 +42,113 @@
 /* -- login.html 结束 -- */
 
 
+/* -- index.html 开始 -- */
 
+/* --左侧 导航栏 -- */
+
+.lt_aside {
+  width: 180px;
+  height: 100%;
+  background-color: #222D32;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  transition: all 1s;
+}
+.lt_aside.hidemenu {
+  left: -180px;
+}
+
+
+.lt_aside .brand {
+  height: 50px;
+  line-height: 50px;
+  background-color: #367FA9;
+  text-align: center;
+}
+.lt_aside .brand a {
+  font-size: 24px;
+  color: white;
+}
+
+.lt_aside .user {
+  height: 180px;
+  padding-top: 30px;
+}
+.lt_aside .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.lt_aside .user p {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.lt_aside .nav a {
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  display: block;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
+}
+.lt_aside .nav i {
+  margin-right: 5px;
+}
+.lt_aside .nav a.current {
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+.lt_aside .nav .child a {
+  padding-left: 60px;
+}
+
+/* -- 右侧 导航栏 -- */
+.lt_main {
+  width: 100%;
+  height: 1000px;
+  padding-left: 180px;
+  padding-top: 70px;
+  /*background-color: pink;*/
+  transition: all 1s;
+}
+.lt_main.hidemenu {
+  padding-left: 0px;
+}
+.lt_main .title {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background-color: #3C8DBC;
+  padding-left: 180px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+}
+.title.hidemenu {
+  padding-left: 0px;
+}
+.lt_main .title a {
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+.echarts_1,
+.echarts_2 {
+  width: 48%;
+  height: 400px;
+}
+
+/* -- index.html 结束 -- */
 
