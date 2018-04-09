@@ -1,0 +1,102 @@
+
+ /* -- 公共样式 -- */
+html,body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+
+ /* -- 页面主体 -- */
+.lt_content {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  background-color: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 55px;
+  padding-top: 45px;
+}
+
+ /* -- 头部开始 -- */
+ .lt_herder {
+   width: 100%;
+   height: 45px;
+   background-color: #006699;
+   position: absolute;
+   top:0;
+   left:0;
+ }
+.herder_left,
+.herder_right {
+  position: absolute;
+  top: 0;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+.herder_left {
+  left: 0;
+}
+.herder_right {
+  right: 0;
+}
+.lt_herder h3 {
+ text-align: center;
+ color: white;
+  line-height: 45px;
+  font-weight: 400;
+}
+ /* -- 头部结束 -- */
+
+
+ /* -- 尾部开始 -- */
+.lt_footer {
+  width: 100%;
+  height: 55px;
+  background-color: #006699;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 8px;
+  overflow: hidden;
+}
+ .lt_footer li {
+   float: left;
+   width: 25%;
+   height: 100%;
+   text-align: center;
+ }
+ .lt_footer li a {
+   color: white;
+   display: block;
+   font-size: 18px;
+ }
+ .lt_footer li p {
+   color: white;
+   font-size: 16px;
+ }
+
+ .lt_footer li.current a {
+   color: orange;
+ }
+ .lt_footer li.current p {
+   color: orange;
+ }
+ /* -- 尾部结束 -- */
